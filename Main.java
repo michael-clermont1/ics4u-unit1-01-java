@@ -1,4 +1,5 @@
 /*
+ *
  * The program calculates the amount of logs
  *
  * @author:  Michael Clermontl
@@ -8,10 +9,24 @@
 
 import java.util.Scanner;
 
+/**
+* This is the starting of main program.
+*/
 public abstract class Main {
-    static final int LOGWEIGHT = 20; // Constant
-    static final int TRUCKCARRYLIMIT = 1100; // Constant
+    /**
+     * Constant Variable Weight.
+     */
+    static final int LOGWEIGHT = 20;
+    /**
+     * Constant Variable Weight Limit.
+     */
+    static final int TRUCKCARRYLIMIT = 1100;
 
+    /**
+    * The starting main() function.
+    *
+    * @param args No args will be used.
+    */
     public static void main(final String[] args) {
 
         Scanner sc = new Scanner(System.in);
