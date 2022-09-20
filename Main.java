@@ -8,15 +8,9 @@
 
 import java.util.Scanner;
 
-final class Main {
-/* 
- * constant variable for weight calculations
-*/
-    static final int LOGWEIGHT = 20;
-/* 
- * constant variable of truck capacity logs
-*/
-    static final int TRUCKCARRYLIMIT = 1100;
+public abstract class Main {
+    static final int LOGWEIGHT = 20; // Constant
+    static final int TRUCKCARRYLIMIT = 1100; // Constant
 
     public static void main(final String[] args) {
 
