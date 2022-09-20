@@ -9,8 +9,14 @@
 import java.util.Scanner;
 
 final class Main {
-    public static final int LOGWEIGHT = 20;
-    public static final int TRUCKCARRYLIMIT = 1100;
+/* 
+ * constant variable for weight calculations
+*/
+    static final int LOGWEIGHT = 20;
+/* 
+ * constant variable of truck capacity logs
+*/
+    static final int TRUCKCARRYLIMIT = 1100;
 
     public static void main(final String[] args) {
 
@@ -20,8 +26,8 @@ final class Main {
         float weight = lengthNumber * LOGWEIGHT;
 
         weight = TRUCKCARRYLIMIT / weight;
-        System.out.println("The amount of logs that can fit in the truck is " 
-	+ weight);
+        System.out.println("The amount of logs that can fit in the truck is "
+         + weight);
         System.out.println("\nDone.");
     }
 }
