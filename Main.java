@@ -8,19 +8,20 @@
 
 import java.util.Scanner;
 
-public class Main {
-    public static final int LogWeight = 20;
-    public static final int TruckCarryLimit = 1100;
+final class Main {
+    public static final int LOGWEIGHT = 20;
+    public static final int TRUCKCARRYLIMIT = 1100;
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("What is the length of the log (0.25, 0.5 or 1): "); 
+        System.out.print("What is the length of the log (0.25, 0.5 or 1): ");
         float lengthNumber = sc.nextFloat();
-        float weight = lengthNumber * LogWeight;
+        float weight = lengthNumber * LOGWEIGHT;
 
-        weight = TruckCarryLimit / weight;
-        System.out.println("The amount of logs that can fit in the truck is " + weight);
+        weight = TRUCKCARRYLIMIT / weight;
+        System.out.println("The amount of logs that can fit in the truck is " 
+	+ weight);
         System.out.println("\nDone.");
     }
 }
